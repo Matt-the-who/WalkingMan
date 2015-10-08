@@ -29,51 +29,61 @@ namespace WalkingMan
         private void btnGo_Click(object sender, EventArgs e)
         {
             int loopCounter = 0;
-
+            int coordinateX = picMan.Location.X;
             do
             {
                 if (loopCounter == 0)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk2;
+                    
                 }
                 else if (loopCounter == 1)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk3;
+                    picMan.Location = new Point(185, 45);
                 }
                 else if (loopCounter == 2)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk4;
+                    picMan.Location = new Point(175, 45);
                 }
                 else if (loopCounter == 3)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk5;
+                    picMan.Location = new Point(165, 45);
                 }
                 else if (loopCounter == 4)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk6;
+                    picMan.Location = new Point(155, 45);
                 }
                 else if (loopCounter == 5)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk7;
+                    picMan.Location = new Point(145, 45);
                 }
                 else if (loopCounter == 6)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk8;
+                    picMan.Location = new Point(135, 45);
                 }
                 else if (loopCounter == 7)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk9;
+                    picMan.Location = new Point(125, 45);
                 }
                 else if (loopCounter == 8)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk10;
+                    picMan.Location = new Point(115, 45);
                 }
                 else if (loopCounter == 9)
                 {
                     this.picMan.Image = WalkingMan.Properties.Resources.walk1;
+                    picMan.Location = new Point(105, 45);
                 }
 
-                loopCounter = loopCounter + 1;
+                loopCounter++;
 
                 // pause
                 this.Refresh();

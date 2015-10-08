@@ -74,9 +74,10 @@
             // 
             // picMan
             // 
-            this.picMan.Location = new System.Drawing.Point(38, 27);
+            this.picMan.Location = new System.Drawing.Point(185, 45);
             this.picMan.Name = "picMan";
-            this.picMan.Size = new System.Drawing.Size(312, 223);
+            this.picMan.Size = new System.Drawing.Size(160, 180);
+            this.picMan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.picMan.TabIndex = 2;
             this.picMan.TabStop = false;
             // 
